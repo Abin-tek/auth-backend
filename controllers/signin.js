@@ -21,7 +21,7 @@ async function InsertVerifyUser(name, email, password) {
     });
     console.log(newUser);
 
-    const activationLink = `http://localhost:4000/signin/${token}`;
+    const activationLink = `https://auth-backend-eqg0.onrender.com/signin/${token}`;
     const content = `<h4> hi, there </h4>
     <h5>Welcome to the app</h5>
     <p>Thank you for signing up.<a href="${activationLink}"> Click here</a> to activate</p>
@@ -55,7 +55,7 @@ async function InsertSignUpUser(token) {
       const content = `<h4> Registration successfull </h4>
     <h5>Welcome to the app</h5>
     <p>You are successfully registered</p>
-    <p>Click on <a href="${LOGIN_URL}">login</a> to continue</p>
+    <p>Click on <a href="${process.env.login_url}">login</a> to continue</p>
     <p>Regards</p>
     <p>Team</p>`;
       sendMail(newUser.email, "Registration successful", content);
