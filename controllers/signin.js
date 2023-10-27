@@ -61,6 +61,7 @@ async function InsertSignUpUser(token) {
       return `<h4> hi, there </h4>
     <h5>Welcome to the app</h5>
     <p>You are successfully registered</p>
+    <p>Go back to site and click on login to continue</p>
     <p>Regards</p>
     <p>Team</p>`;
     }
