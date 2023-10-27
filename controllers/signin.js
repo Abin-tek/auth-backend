@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 var jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 const verifyUser = require("../models/verifyUser");
-const LOGIN_URL = require("../config/global");
 dotenv.config();
 async function InsertVerifyUser(name, email, password) {
   try {
