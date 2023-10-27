@@ -54,7 +54,7 @@ async function InsertSignUpUser(token) {
       const content = `<h4> Registration successfull </h4>
     <h5>Welcome to the app</h5>
     <p>You are successfully registered</p>
-    <p>Click on <a href="${process.env.login_url}">login</a> to continue</p>
+    <p>Go back to site and click on login to continue</p>
     <p>Regards</p>
     <p>Team</p>`;
       sendMail(newUser.email, "Registration successful", content);
